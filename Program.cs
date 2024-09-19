@@ -28,7 +28,6 @@ namespace NumbersGame
                 int userGuess = 0;
                 int.TryParse(Console.ReadLine(), out userGuess);
                    
-                //int answer = AnswerCheck(number, userGuess);
                 int answer = GuessTheNumber(userGuess, random, number);
                 
                 // GuessTheNumber returns 3 if user guessed correctly
@@ -58,7 +57,7 @@ namespace NumbersGame
             //using a few different answers for variation, by using random.next
             //note we dont make a new instance of random since its seeded by using a timestap from the local machine
             //if we make a new random for every guess there is a risk that we get the same number generated multiple times.
-            //kom ihåg att lägga in något om svaret är mindre ller högre, lägg in math.abs här och nå + - i strängen
+
             string[] answers = [ "Oj Denna gång var du inte nära!", "oj Det var långt ifrån", "Inte ens nära",
                 "Det bränns", "Nu är du nära", "Inte riktigt men nära!",
                 "Gratulerar! du gissade rätt", "Grattis du hade rätt","Grattis du vann!" ];
